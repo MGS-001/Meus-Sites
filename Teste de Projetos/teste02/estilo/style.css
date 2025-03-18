@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    background-color: #1e1d20;
+    justify-content: space-between;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
