@@ -1,0 +1,45 @@
+@charset "UTF-8"; /* Versão Mobile*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root{
+    --cor1:#6CAFD9;
+    --cor2:#275D8C;
+    --cor3:#0B2740;
+    --cor4:#142426;
+    --fontpadrao:'Roboto Flex';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    height: 35vh;
+    width: 100vw;
+    background-color: #0B2740;
+}
+
+section#texto{
+    display: grid;
+    background-color: #275D8C;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section#texto h2{
+    grid-column: 2;
+}
+
+section#p1{
+    grid-column: 2;
+}
+
+section#p2{
+    grid-column: 3;
+}
