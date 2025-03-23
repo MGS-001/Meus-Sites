@@ -79,6 +79,7 @@ body{
 }
 
 #cartoes{
+    color: var(--cor4);
     width: 100vw;
     height: 200px;
     display: flex;
@@ -88,11 +89,17 @@ body{
     background-color: antiquewhite;
 }
 
+#cartoes p{
+    color: white;
+    border-radius: 10px 10px 0 0 ;
+    background-color: #0b2740c6;
+}
+
 .card{
-    width: 25vw;
-    margin: auto 7px;
+    width: 28vw;
     height: 20vh;
     display: grid;
+    margin: auto 7px;
     text-align: center;
     border-radius: 10px;
     background-color: white;
@@ -127,17 +134,17 @@ a{
 
 #card01{
     background: url('../imagem/tiguan\ allspace.avif') center no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #card02{
     background: url('../imagem/tiguan\ confortiline.jpg') center no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #card03{
     background: url('../imagem/tiguan\ r\ line.png') center no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #final div{
