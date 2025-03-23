@@ -13,7 +13,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-weight: 400;
     font-family: var(--fontpadrao);
 }
 
@@ -25,7 +24,7 @@ body{
 #topo{
     height:35vh;
     width: 100vw;
-    background: url('../imagem/tiguan\ 01.jpg') center;
+    background: url('../imagem/tiguan\ 01\ 800.jpg') center;
     background-size: cover;
 }
 
@@ -60,7 +59,6 @@ body{
 }
 
 #imagemtexto{
-    height: 25vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -79,9 +77,11 @@ body{
 }
 
 #cartoes{
-    height: 23vh;
     width: 100vw;
+    height: 200px;
     display: flex;
+    font-weight: bolder;
+    align-content: center;
     justify-content: center;
     background-color: antiquewhite;
 }
@@ -105,9 +105,9 @@ body{
 
 .butao{
     width: 80%;
-    display: flex;
     padding: 6px;
     margin: auto;
+    display: flex;
     border-radius: 15px;
     justify-content: center;
     background-color: var(--cor4);
