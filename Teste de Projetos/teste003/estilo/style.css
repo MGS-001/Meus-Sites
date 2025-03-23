@@ -24,7 +24,7 @@ body{
 #topo{
     height:35vh;
     width: 100vw;
-    background: url('../imagem/tiguan\ 01\ 800.jpg') center;
+    background: url('../imagem/tiguan\ 02.jpg') center;
     background-size: cover;
 }
 
@@ -59,13 +59,15 @@ body{
 }
 
 #imagemtexto{
+    height: 30vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-#imagemtexto img{
-    width: 100%;
-    height: 100%;
+#imagem{
+    background: url('../imagem/tiguan\ 01\ recorta.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #textoimg{
@@ -88,7 +90,7 @@ body{
 
 .card{
     width: 25vw;
-    margin: 7px;
+    margin: auto 7px;
     height: 20vh;
     display: grid;
     text-align: center;
