@@ -1,13 +1,13 @@
 @charset "UTF-8"; /* Versão Mobile*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 :root{
     --cor1:#6CAFD9;
     --cor2:#275D8C;
     --cor3:#0B2740;
     --cor4:#142426;
-    --fontpadrao:'Roboto Flex';
+    --fontpadrao:'Julius Sans One';
 }
 
 *{
@@ -30,14 +30,16 @@ body{
 }
 
 #topo h2{
+    color: white;
     padding: 10px;
     text-align: center;
 }
 
 #secaotexto{
     display:flex;
+    color: white;
     justify-content: flex-end;
-    background-color: #0f5da2;
+    background-color: var(--cor3);
 }
 
 #texto{
@@ -81,17 +83,19 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
+    background-color: antiquewhite;
 }
 
 .card{
     width: 25vw;
     margin: 7px;
     height: 20vh;
-    display: flex;
+    display: grid;
+    text-align: center;
     border-radius: 10px;
-    align-items: flex-end;
-    justify-content: center;
     background-color: white;
+    align-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.468);
 }
 
 .card:hover{
@@ -99,18 +103,24 @@ body{
     transform: scale(1.1)
 }
 
-.card > a {
-    width: 90%;
-    height: 20px;
-    padding: 2px;
+.butao{
+    width: 80%;
     display: flex;
-    color: white;
-    align-items: center; 
+    padding: 6px;
+    margin: auto;
     border-radius: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor4);
+}
+
+.butao:hover{
+    transition: .7s;
+    background-color: var(--cor2);
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 #card01{
