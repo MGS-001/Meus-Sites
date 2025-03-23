@@ -81,7 +81,6 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: #0B2740;
 }
 
 .card{
@@ -115,18 +114,18 @@ body{
 }
 
 #card01{
-    background: url('../imagem/tiguan\ allspace.avif') center;
-    background-size: cover;
+    background: url('../imagem/tiguan\ allspace.avif') center no-repeat;
+    background-size: contain;
 }
 
 #card02{
-    background: url('../imagem/tiguan\ confortiline.jpg') center;
-    background-size: cover;
+    background: url('../imagem/tiguan\ confortiline.jpg') center no-repeat;
+    background-size: contain;
 }
 
 #card03{
-    background: url('../imagem/tiguan\ r\ line.png') center;
-    background-size: cover;
+    background: url('../imagem/tiguan\ r\ line.png') center no-repeat;
+    background-size: contain;
 }
 
 #final div{
