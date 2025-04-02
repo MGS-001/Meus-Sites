@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root{
+    --cor1:#0E1256;
+    --cor2:#34388A;
+    --cor3:#1823e8;
+    --cor4:rgb(102, 98, 98);
+
+
+    --fontcabecalho:'Electrolize';
+    --fontcorpo:'Orbitron';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: #0E1256;
+    justify-content: space-between;
+    font-family: var(--fontcabeçalho);
+}
+
+header a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+header h3{
+    font-weight: 100;
+}
