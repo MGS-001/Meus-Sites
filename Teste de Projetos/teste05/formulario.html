@@ -102,9 +102,9 @@
     </header>
     <div class="formulario">
         <h2>Conta</h2>
-        <form action="formulario.php">
+        <form action="formulario.php" autocomplete="on">
             <label for="usuario"> Usuário:
-                <input type="text" name="usuario" id="usuario" maxlength="30" minlength="10" placeholder="Telefone, e-mail ou Cpf" required>
+                <input type="email" name="usuario" id="usuario" maxlength="30" minlength="10" placeholder="Telefone, e-mail ou Cpf" required="e-mail" autocomplete="email">
             </label><br>
             <label for="senha"> Senha:
                 <input type="password" name="senha" id="senha" placeholder="6 a 8 Dígitos" minlength="6" maxlength="8" required>
