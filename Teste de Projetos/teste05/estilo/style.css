@@ -34,6 +34,7 @@ header a{
     padding: 10px;
     color: white;
     text-decoration: none;
+    font-family: var(--fontcabecalho);
 }
 
 header a:hover{
@@ -46,10 +47,13 @@ header h3{
     font-weight:100;
 }
 
+main{
+    font-family: var(--fontcorpo);
+}
+
 #container{
     height: 93vh;
     width: 100vw;
-    font-family: var(--fontcorpo);
     background: url('../imagem/fundo700.jpg') no-repeat center bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -103,4 +107,12 @@ header h3{
     transition: .5s;
     color: #0E1256;
     background-color: var(--cor4);
+}
+
+footer{
+    padding: 2px;
+    color: white;
+    text-align: center;
+    margin-bottom: -20px;
+    background-color: var(--cor1);
 }
