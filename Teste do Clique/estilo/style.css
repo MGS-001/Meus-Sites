@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+    background-color: darkgray;
+}
+
+#caixa{
+    width: 80vw;
+    display: grid;
+    height: 200px;
+    font-size: 1.2em;
+    max-width: 200px;
+    user-select: none;
+    place-items: center;
+    background-color: blue;
+}

@@ -65,11 +65,11 @@ h1{
     background: url('../imagem/telefone\ 800.png');
 }
 
-iframe#tela{
+#telefone >iframe{
     top: 10%;
-    left: 41%;
-    width: 310px;
-    height: 650px;
+    left: 42%;
     position: relative;
-    border-radius: 20px;
+
+    height: 600px;
 }
+
