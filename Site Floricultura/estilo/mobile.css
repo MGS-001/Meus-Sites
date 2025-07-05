@@ -29,10 +29,6 @@ nav a{
     text-decoration: none;
 }
 
-aside{
-    display: none;
-}
-
 main{
     display: grid;
     justify-content: center;
@@ -42,15 +38,6 @@ main{
     margin: 20px;
     height: 350px;
     width: 250px;
-}
-
-.caixa img{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-56%);
-    width: 96%;
-    height: 87%;
 }
 
 footer{

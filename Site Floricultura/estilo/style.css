@@ -54,6 +54,15 @@ main{
     background-color: var(--cor3);
 }
 
+.caixa img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-56%);
+    width: 96%;
+    height: 87%;
+}
+
 .texto{
     padding: 10px;
     color: white;
