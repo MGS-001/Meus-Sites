@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr) 50px;
+}
+
+header{
+    display: grid;
+    text-align: center;
+}
+
+#logo{
+    margin: 20px auto 10px;
+}
+
+#menuham{
+    padding: 10px;
+    font-size: 2.1em;
+    color: var(--cor1);
+}
+
+nav a{
+    padding: 5px;
+    display: flex;
+    color: black;
+    justify-self: center;
+    text-decoration: none;
+}
+
+aside{
+    display: none;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+}
+
+.caixa{
+    margin: 20px;
+    height: 350px;
+    width: 250px;
+}
+
+.caixa img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-56%);
+    width: 96%;
+    height: 87%;
+}
+
+footer{
+    padding: 10px;
+    place-items: center;
+}

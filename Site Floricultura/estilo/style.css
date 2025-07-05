@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root{
+    --cor1:#BF9E75;
+    --cor2:#7C8C03;
+    --cor3:#465902;
+    --cor4:#324001;
+    --cor5:#1E2601;
+
+    --fonttitulo:'Cinzel';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: var(--cor1);
+    font-style: italic;
+    font-weight: bolder;
+    font-family: var(--fonttitulo);
+    background-color: var(--cor5);
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
+}
+
+#item{
+    display: none;
+}
+
+#item a{
+    padding: 5px;
+    width: 100vw;
+    font-size: 1.2em;
+    color:var(--cor1);
+    justify-content: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
+}
+
+#item a:hover{
+    color: var(--cor5);
+    background-color: var(--cor1);
+}
+
+main{
+    background-color: var(--cor1);
+}
+
+.caixa{
+    box-shadow: 6px 4px 7px 1px rgba(0, 0, 0, 0.245);
+    background-color: var(--cor3);
+}
+
+.texto{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: var(--fonttitulo);
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
+}
+
+footer{
+    padding: 10px;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
