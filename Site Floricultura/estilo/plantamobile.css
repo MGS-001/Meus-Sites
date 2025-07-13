@@ -23,7 +23,6 @@
     background-color: var(--cor2);
 }
 
-
 header{
     padding: 20px;
     text-align: center;
@@ -59,12 +58,13 @@ header{
 
 main{
     margin: auto;
-    width: 91vw;
+    width: 97vw;
+    background-color: rgba(255, 255, 255, 0.508);
 }
 
 h2, h3{
     padding: 10px;
-    text-shadow: 10px 6px 4px rgba(0, 0, 0, 0.088);
+    text-shadow: 6px 5px 3px rgb(0 0 0 / 7%);
 }
 
 p{
@@ -72,22 +72,22 @@ p{
 }
 
 p, li{
-    width: 90%;
-    padding: 5px;
+    padding: 10px;
     font-size: 1.1em;
     line-height: 2em;
     margin: 24px auto ;
     text-align: justify;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 10px 6px 3px rgba(0, 0, 0, 0.075);
+    text-shadow: 6px 5px 3px rgb(0 0 0 / 7%);
 }
 
 ul{
     padding: 10px;
+    list-style: none;
 }
 
 footer{
-    margin-bottom: -25px;
+    margin-bottom: -20px;
     background-color: var(--cor4);
 }
 
