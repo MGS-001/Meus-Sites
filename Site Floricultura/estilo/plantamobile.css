@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root{
+    --cor1:#BF9E75;
+    --cor2:#7C8C03;
+    --cor3:#465902;
+    --cor4:#324001;
+    --cor5:#1E2601;
+
+    --fonttitulo:'Cinzel';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: var(--cor5);    
+    background-color: var(--cor2);
+}
+
+
+header{
+    padding: 20px;
+    text-align: center;
+    color: var(--cor1);
+    font-style: italic;
+    font-weight: bolder;
+    font-family: var(--fonttitulo);
+    background-color: var(--cor4);
+}
+
+#menuham{
+    font-size: 2em;
+}
+
+#item{
+    display: none;
+}
+
+#item a{
+    display: grid;
+    padding: 5px;
+    font-size: 1.2em;
+    color:var(--cor1);
+    text-decoration: none;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
+}
+
+#item a:hover{
+    transition: .5s;
+    color: var(--cor5);
+    background-color: var(--cor1);
+}
+
+main{
+    margin: auto;
+    width: 91vw;
+}
+
+h2, h3{
+    padding: 10px;
+    text-shadow: 10px 6px 4px rgba(0, 0, 0, 0.088);
+}
+
+p{
+    text-indent: 2em;
+}
+
+p, li{
+    width: 90%;
+    padding: 5px;
+    font-size: 1.1em;
+    line-height: 2em;
+    margin: 24px auto ;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 10px 6px 3px rgba(0, 0, 0, 0.075);
+}
+
+ul{
+    padding: 10px;
+}
+
+footer{
+    margin-bottom: -25px;
+    background-color: var(--cor4);
+}
+
+footer p{
+    color: var(--cor1);
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
+}
