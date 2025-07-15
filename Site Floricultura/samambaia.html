@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samambaia</title>
+    <link rel="shortcut icon" href="imagem/plantas.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilo/plantamobile.css" media="screen">
+</head>
+    <style>      
+    body{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left;
+        background-image: url('imagem/samambaia\ desenho.png');
+    }
+    </style>
+<body>
+    <header>
+        <h1>Samambaia</h1>
+        <h3>A Beleza Verde que Traz Vida aos Ambientes</h3>
+            <span id="menuham" class="material-symbols-outlined" onclick="clicar()">menu</span>
+        <nav id="item">
+            <a href="index.html">Home</a>
+            <a href="">Teste 02</a>
+            <a href="">Teste 03</a>
+        </nav>
+    </header>
+    <main>
+        <p>A samambaia é uma planta ornamental muito popular, conhecida por sua folhagem exuberante, delicada e pendente. Pertencente ao grupo das pteridófitas, ela se destaca não por flores ou frutos, mas por suas folhas compostas chamadas frondes, que crescem em formato de leques ou cascatas. Seu nome científico varia conforme a espécie — entre as mais comuns estão a Nephrolepis exaltata e a Davallia fejeensis.</p>
+
+        <h2>Origem e Características</h2>
+        <p>Originárias de florestas tropicais e subtropicais, as samambaias prosperam em ambientes úmidos e sombreados. Na natureza, elas costumam crescer no solo de matas fechadas ou até mesmo em troncos de árvores, como plantas epífitas. Por isso, se adaptam bem a locais internos ou varandas com luminosidade indireta.</p>
+
+        <h3>Seus principais atrativos são:</h3>
+
+     <ul>
+         <li>Folhas longas, recortadas e arqueadas que formam um visual denso e elegante.</li>
+    
+         <li>Variedade de espécies que vão desde as mais comuns até tipos exóticos e raros.</li>
+    
+         <li>Capacidade de purificar o ar, ajudando a melhorar a qualidade do ambiente interno.</li>
+     </ul>
+
+        <h2>Cuidados com a Samambaia</h2>
+        <p>Apesar de sua aparência frágil, a samambaia é uma planta resistente, desde que sejam respeitadas suas necessidades básicas. Veja os principais cuidados:</p>
+
+        <ol>
+          <li>
+               1. Luz
+               Prefere luz indireta e ambientes sombreados. A exposição direta ao sol pode queimar suas folhas. Em interiores, deve ser colocada próxima a janelas bem iluminadas, mas sem sol direto.
+          </li>
+    
+          <li>
+              2. Rega
+              A samambaia gosta de umidade constante, tanto no solo    quanto no ar. Regue com frequência, evitando que o substrato seque totalmente, mas sem encharcar. A pulverização nas folhas é recomendada em dias secos.
+         </li>
+    
+         <li>
+             3. Temperatura
+             Idealmente entre 18°C e 25°C. Evite correntes de ar frio ou calor excessivo.
+         </li>
+    
+         <li>
+              4. Adubação
+              Utilize fertilizante líquido ou granulado próprio para plantas verdes, a cada 15 dias durante a primavera e o verão. No outono e inverno, reduza a frequência.
+         </li>
+    
+         <li>
+             5. Poda e Limpeza
+             Remova folhas secas ou amareladas regularmente para estimular o crescimento de novas frondes. Manter a planta limpa também evita pragas como cochonilhas.
+         </li>
+        </ol>
+
+        <h2>Tipos Populares de Samambaia</h2>
+        <div>
+            <p>Samambaia americana (Nephrolepis exaltata) – a mais conhecida, muito usada em vasos suspensos.</p>
+            <img src="imagem/Samambaia americana (Nephrolepis exaltata).webp" alt="samambaia americana" class="tipodeplantas">
+        </div>
+
+        <p>Samambaia renda portuguesa – tem folhas mais delicadas, como rendas, e exige um pouco mais de cuidado.</p>
+        <img src="imagem/Samambaia renda portuguesa.jpg" alt="samambaia renda portuguesa" class="tipodeplantas">
+
+        <p>Samambaia havaiana – de folhagem mais robusta e tom verde intenso.</p>
+        <img src="imagem/Samambaia havaiana.webp" alt="samambaia havaiana" class="tipodeplantas">
+
+        <p>Samambaia de metro – com frondes que podem ultrapassar um metro de comprimento, perfeita para áreas externas.</p>
+        <img src="imagem/Samambaia de metro.webp" alt="samambaia de metro" class="tipodeplantas">
+
+        <h2>Uso Decorativo</h2>
+        <p>A samambaia é um clássico da decoração brasileira, sendo muito usada em:</p>
+
+        <p>Vasos suspensos em varandas e sacadas</p>
+
+        <p>Suportes de parede e macramês</p>
+
+        <p>Jardins verticais</p>
+
+        <p>Ambientes internos como salas e banheiros bem iluminados</p>
+
+        <p>Ela adiciona frescor, leveza e movimento aos ambientes, tornando-se peça-chave em estilos como o boho, tropical e rústico.</p>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos estão reservados</p>
+    </footer>
+    <script>
+        let item = document.querySelector('#item')
+        function clicar(){
+            if (item.style.display === 'block') {
+                item.style.display = 'none'
+            }else{
+                item.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

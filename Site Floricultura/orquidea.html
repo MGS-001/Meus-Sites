@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orquídea</title>
+    <link rel="shortcut icon" href="imagem/plantas.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilo/plantamobile.css" media="screen">
+    <style>      
+    body{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left center;
+        background-image: url('imagem/orquidea\ desenho.png');
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Costela-de-Adão</h1>
+        <h3>A Planta Tropical que Encanta com Suas Folhas Esculturais</h3>
+            <span id="menuham" class="material-symbols-outlined" onclick="clicar()">menu</span>
+        <nav id="item">
+            <a href="index.html">Home</a>
+            <a href="">Teste 02</a>
+            <a href="">Teste 03</a>
+        </nav>
+    </header>
+    <main>
+        <p>A orquídea é uma das flores mais fascinantes e admiradas do reino vegetal. Pertencente à família Orchidaceae, uma das maiores e mais diversificadas do mundo botânico, essa planta encanta pela beleza exótica, pelas cores vibrantes e pela variedade de formas de suas flores. Estima-se que existam mais de 30 mil espécies naturais de orquídeas e cerca de 150 mil híbridos cultivados pelo homem, adaptados aos mais diversos climas e ambientes.</p>
+
+        <h2>Características gerais</h2>
+        <p>As orquídeas podem variar muito em tamanho, forma e coloração. Suas flores geralmente apresentam uma estrutura única, com três sépalas e três pétalas, sendo uma delas modificada em um lábio (ou labelo), que serve como ponto de pouso para os polinizadores. Essa característica anatômica torna cada flor ainda mais especial e atrativa.</p>
+
+        <p>A maioria das orquídeas são epífitas, ou seja, crescem sobre outras plantas, como troncos de árvores, sem parasitá-las. Elas utilizam essas estruturas apenas como suporte, retirando a umidade e os nutrientes do ar e da matéria orgânica acumulada ao redor de suas raízes. Existem também espécies terrestres (que crescem no solo) e litófitas (que se desenvolvem sobre rochas).</p>
+
+        <h2>Habitat e distribuição</h2>
+        <p>As orquídeas podem ser encontradas em praticamente todos os continentes, com exceção da Antártida. Elas são particularmente abundantes nas florestas tropicais, como a Amazônia e a Mata Atlântica brasileira. O Brasil, aliás, é um dos países mais ricos em diversidade de orquídeas, com mais de 2.500 espécies nativas, como a Cattleya labiata, Oncidium, Dendrobium e a Phalaenopsis.</p>
+
+        <h2>Cultivo e cuidados</h2>
+        <p>Cultivar orquídeas exige atenção e paciência, mas não é tão difícil quanto muitos pensam. Cada espécie possui suas preferências, mas alguns cuidados gerais se aplicam à maioria:</p>
+
+        <ul>
+            <li>Luz: orquídeas gostam de ambientes bem iluminados, mas sem sol direto, que pode queimar suas folhas.</li>
+    
+            <li>Rega: não devem ser encharcadas. O ideal é regar quando o substrato estiver seco ao toque.</li>
+    
+            <li>Ventilação: boa circulação de ar ajuda a evitar fungos e doenças.</li>
+    
+            <li>Substrato: deve ser leve e bem drenado, geralmente à base de casca de pinus, carvão vegetal e esfagno.</li>
+    
+            <li>Adubação: é importante usar adubos específicos para orquídeas, seguindo a frequência recomendada.</li>
+        </ul>
+
+        <h2>Simbolismo e uso</h2>
+        <p>A orquídea é símbolo de beleza, elegância, amor e delicadeza. Em algumas culturas, ela representa também força e fertilidade. Além de serem amplamente utilizadas em arranjos florais, decoração e presentes especiais, algumas espécies possuem usos medicinais e até cosméticos.</p>
+
+        <h2>Curiosidades</h2>
+        <p>A baunilha, utilizada na culinária, é derivada da orquídea Vanilla planifolia.</p>
+
+        <p>Algumas orquídeas conseguem viver por décadas, florescendo uma vez por ano, mas com flores que duram semanas.</p>
+
+        <p>A polinização de muitas espécies depende de insetos específicos, como abelhas ou mariposas, demonstrando uma impressionante coevolução.</p>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos estão reservados</p>
+    </footer>
+    <script>
+        let item = document.querySelector('#item')
+        function clicar(){
+            if (item.style.display === 'block') {
+                item.style.display = 'none'
+            }else{
+                item.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
