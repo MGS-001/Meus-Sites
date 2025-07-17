@@ -21,16 +21,19 @@ header{
     color: var(--cor1);
 }
 
-nav a{
-    padding: 5px;
+#item a{
     display: flex;
-    color: black;
-    justify-self: center;
+    padding: 5px;
+    font-size: 1.2em;
+    color:var(--cor1);
     text-decoration: none;
+    justify-content: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
 }
 
-a{
-    text-decoration: none;
+#item a:hover{
+    color: var(--cor5);
+    background-color: var(--cor1);
 }
 
 main{
