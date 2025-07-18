@@ -40,6 +40,11 @@ main{
     background-color: var(--cor1);
 }
 
+.imagem{
+    background-image: url('../imagem/Comigo-ninguem-pode\ 2\ \(450\).jpg');
+    background-size: contain;
+}
+
 .caixa{
     box-shadow: 6px 4px 7px 1px rgba(0, 0, 0, 0.245);
     background-color: var(--cor3);
