@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+
+        .image.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container" onmouseenter="trocarImagem()">
+      <img id="image1" src="imagem/comigo ninguem pode 450.webp" class="image active">
+      <img id="image2" src="imagem/comigo-ninguem-pode desenho.png" class="image">
+    </div>
+<script>
+    let containerimg = document.getElementById('image-container')
+    containerimg.addEventListener("mouseout", sair)
+    function trocarImagem() {
+        const img1 = document.getElementById('image1');
+        const img2 = document.getElementById('image2');
+
+        // Troca as classes de opacidade
+        img1.classList.toggle('active');
+        img2.classList.toggle('active');
+    }
+
+    function sair(){
+        const img1 = document.getElementById('image1');
+        const img2 = document.getElementById('image2');
+
+        // Troca as classes de opacidade
+        img1.classList.toggle('active');
+        img2.classList.toggle('active');  
+    }
+
+</script>
+</body>
+</html>

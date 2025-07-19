@@ -27,6 +27,10 @@ header{
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
 }
 
+body{
+    font-family: var(--fonttitulo);
+}
+
 #item{
     display: none;
 }
@@ -37,38 +41,43 @@ a{
 }
 
 main{
+    height: 100vh;
     background-color: var(--cor1);
 }
 
-.imagem{
-    background-image: url('../imagem/Comigo-ninguem-pode\ 2\ \(450\).jpg');
-    background-size: contain;
-}
-
-.caixa{
-    box-shadow: 6px 4px 7px 1px rgba(0, 0, 0, 0.245);
-    background-color: var(--cor3);
-}
-
-.caixa img{
+.image-container{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-56%);
-    width: 96%;
-    height: 87%;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 7px 6px 6px 1px #00000030;
+}
+
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.image.active{
+    opacity: 1;
 }
 
 .texto{
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-family: var(--fonttitulo);
-    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
+   top: 87%;
+   font-style: italic;
+   padding: 10px;
+   color: var(--cor1);
+   text-align: center;
+   position: relative;
+   background-color: #1e2601d2;
 }
 
 footer{
     padding: 10px;
+    text-align: center;
     color: var(--cor1);
     background-color: var(--cor5);
 }

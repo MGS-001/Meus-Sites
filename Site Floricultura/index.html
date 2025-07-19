@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raizes & Ramos</title>
-    <link rel="shortcut icon" href="imagem/plantas.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilo/style.css" media="all">
-    <link rel="stylesheet" href="estilo/mobile.css"  media="screen and (max-width:849px)">
-    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (min-width:850px)">
+    <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width:600px)">
 </head>
 <body>
     <header>
@@ -24,84 +22,34 @@
         </nav>
     </header>
     <main>
-        <div class="caixa" id="cx1">
-            <a href="comigoninguempode.html" onmouseenter="entrar()">
-                <img src="imagem/comigo ninguem pode 450.webp" alt="imagem de Comigo-ninguém-pode" class="imagem">
-                <div class="texto">
-                    <p>Comigo-ninguém-pode</p>
-                </div>
+        <div class="image-container" onmouseenter="trocarImagem1()">
+            <a href="comigoninguempode.html">
+             <img id="image1" src="imagem/comigo ninguem pode 450.webp" class="image active">
+             <img id="image2" src="imagem/comigo-ninguem-pode desenho.png" class="image">
+             <div class="texto">
+                 <p>comigo-ninguem-pode</p>
+             </div>
             </a>
         </div>
-        <div class="caixa" id="cx2">
+        <div class="image-container" onmouseenter="trocarImagem2()">
             <a href="copodeleite.html">
-                <img src="imagem/copo de leite 450.jpg" alt="Imagem de um copo de leite">
-                <div class="texto">
-                    <p>Copo-de-leite</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx3">
-            <a href="espadadesaojorge.html">
-                <img src="imagem/espada de são jorge 300.jpg" alt="Imagem de uma espada de são jorge">
-                <div class="texto">
-                    <p>Espada-de-são-jorge</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx4">
-            <a href="samambaia.html">
-                <img src="imagem/samambaia.jpg" alt="Imagem de uma samambaia">
-                <div class="texto">
-                    <p>Samambaia</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx5">
-            <a href="costeladeadao.html">
-                <img src="imagem/costela de adao 450.webp" alt="Imagem de uma costela de adão">
-                <div class="texto">
-                    <p>Costela-de-Adão</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx6">
-            <a href="liriodapaz.html">
-                <img src="imagem/Spathiphyllum 450.jpg" alt="Imagem de um Lírio da Paz">
-                <div class="texto">
-                    <p>Lírio-da-paz</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx7">
-            <a href="orquidea.html">
-                <img src="imagem/Orquídea 450.jpg" alt="Imagem de uma Orquídea">
-                <div class="texto">
-                    <p>Orquídea</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx8">
-            <a href="lavanda.html">
-                <img src="imagem/lavanda 450.png" alt="Imagem de Lavanda">
-                <div class="texto">
-                    <p>Lavanda</p>
-                </div>
-            </a>
-        </div>
-        <div class="caixa" id="cx9">
-            <a href="rosa.html">
-                <img src="imagem/rosa vermelha 450.jpg" alt="Imagem de uma rosa vermelha">
-                <div class="texto">
-                    <p>Rosa-Vermelha</p>
-                </div>
+             <img id="image3" src="imagem/copo de leite 450.jpg" class="image active">
+             <img id="image4" src="imagem/copo-de-leite desenho.png" class="image">
+             <div class="texto">
+                 <p>comigo-ninguem-pode</p>
+             </div>
             </a>
         </div>
     </main>
     <footer>
-        <p>&copy; Todos os direitos estão reservados</p>
+        <p>Todos os Direitos estão reservados &copy;</p>
     </footer>
+ 
     <script>
         let item = document.querySelector('#item')
+        let containerimg = document.querySelector('.image-container')
+        containerimg.addEventListener("mouseout", sair)
+
         function clicar(){
             if (item.style.display === 'block') {
                 item.style.display = 'none'
@@ -110,15 +58,24 @@
             }
         }
 
-        let img = document.querySelector('.imagem')
-        img.addEventListener("mouseout", sair)
+        function trocarImagem1() {
+            const img1 = document.getElementById("image1");
+            const img2 = document.getElementById('image2');
 
-        function entrar(){
-            img.src = 'imagem/comigo-ninguem-pode.png'
+            // Troca as classes de opacidade
+            img1.classList.toggle('active');
+            img2.classList.toggle('active');         
         }
 
-        function sair(){
-            img.src = 'imagem/comigo ninguem pode 450.webp'
+        function sair() {
+            alternarImagens('image1', 'image2');
+        }
+
+        function trocarImagem2(){
+            const img3 = document.getElementById("image3");
+            const img4 = document.getElementById('image4');
+            img3.classList.toggle('active');
+            img4.classList.toggle('active');
         }
     </script>
 </body>
