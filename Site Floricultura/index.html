@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raizes & Ramos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style.css" media="all">
-    <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width:729px)">
+    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (min-width:730px)">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <div class="image-container" onmouseenter="trocarImagem1()">
+        <div class="image-container" onmouseenter="trocarImagem()">
             <a href="comigoninguempode.html">
              <img id="image1" src="imagem/comigo ninguem pode 450.webp" class="image active">
              <img id="image2" src="imagem/comigo-ninguem-pode desenho.png" class="image">
@@ -31,12 +32,75 @@
              </div>
             </a>
         </div>
-        <div class="image-container" onmouseenter="trocarImagem2()">
+        <div class="image-container" onmouseenter="trocarImagem()">
             <a href="copodeleite.html">
              <img id="image3" src="imagem/copo de leite 450.jpg" class="image active">
              <img id="image4" src="imagem/copo-de-leite desenho.png" class="image">
              <div class="texto">
-                 <p>comigo-ninguem-pode</p>
+                 <p>copo-de-leite</p>
+             </div>
+            </a>
+        </div>
+         <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="costeladeadao.html">
+             <img id="image5" src="imagem/costela de adao 450.webp" class="image active">
+             <img id="image6" src="imagem/costela-de-adão desenho.png" class="image">
+             <div class="texto">
+                 <p>costela-de-adão</p>
+             </div>
+            </a>
+        </div>
+        <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="espadadesaojorge.html">
+             <img id="image7" src="imagem/espada de sao jorge 450.webp" class="image active">
+             <img id="image8" src="imagem/espada sao jorge desenho 350.png" class="image">
+             <div class="texto">
+                 <p>Espada-de-São-Jorge</p>
+             </div>
+            </a>
+        </div>
+        <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="liriodapaz.html">
+             <img id="image9" src="imagem/Spathiphyllum 450.jpg" class="image active">
+             <img id="image10" src="imagem/lirio-da-paz desenho.png" class="image">
+             <div class="texto">
+                 <p>lirio-da-paz</p>
+             </div>
+            </a>
+        </div>
+        <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="orquidea.html">
+             <img id="image11" src="imagem/Orquídea 450.jpg" class="image active">
+             <img id="image12" src="imagem/orquidea desenho.png" class="image">
+             <div class="texto">
+                 <p>Orquídea</p>
+             </div>
+            </a>
+        </div>
+        <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="samambaia.html">
+             <img id="image13" src="imagem/samambaia.jpg" class="image active">
+             <img id="image14" src="imagem/samambaia desenho.png" class="image">
+             <div class="texto">
+                 <p>samambaia</p>
+             </div>
+            </a>
+        </div>
+        <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="rosa.html">
+             <img id="image15" src="imagem/rosa vermelha 450.jpg" class="image active">
+             <img id="image16" src="imagem/rosa desenho.png" class="image">
+             <div class="texto">
+                 <p>Rosa</p>
+             </div>
+            </a>
+        </div>
+        <div class="image-container" onmouseenter="trocarImagem()">
+            <a href="lavanda.html">
+             <img id="image17" src="imagem/lavanda 450.png" class="image active">
+             <img id="image18" src="imagem/lavanda desenho.png" class="image">
+             <div class="texto">
+                 <p>lavanda</p>
              </div>
             </a>
         </div>
@@ -46,37 +110,34 @@
     </footer>
  
     <script>
-        let item = document.querySelector('#item')
-        let containerimg = document.querySelector('.image-container')
-        containerimg.addEventListener("mouseout", sair)
-
-        function clicar(){
-            if (item.style.display === 'block') {
-                item.style.display = 'none'
-            }else{
-                item.style.display = 'block'
-            }
+    function clicar() {
+        const itens = document.getElementById('item');
+        if (itens.style.display === 'block') {
+            itens.style.display = 'none';
+        } else {
+            itens.style.display = 'block';
         }
+    }
 
-        function trocarImagem1() {
-            const img1 = document.getElementById("image1");
-            const img2 = document.getElementById('image2');
+    // Manipula troca de imagem no hover
+    function trocarImagem(id1, id2) {
+        const img1 = document.getElementById(id1);
+        const img2 = document.getElementById(id2);
+        img1.classList.toggle('active');
+        img2.classList.toggle('active');
+    }
 
-            // Troca as classes de opacidade
-            img1.classList.toggle('active');
-            img2.classList.toggle('active');         
-        }
-
-        function sair() {
-            alternarImagens('image1', 'image2');
-        }
-
-        function trocarImagem2(){
-            const img3 = document.getElementById("image3");
-            const img4 = document.getElementById('image4');
-            img3.classList.toggle('active');
-            img4.classList.toggle('active');
-        }
-    </script>
+    // Adiciona evento para ambos containers
+    document.querySelectorAll('.image-container').forEach(container => {
+        container.addEventListener('mouseenter', () => {
+            const imgs = container.querySelectorAll('img');
+            trocarImagem(imgs[0].id, imgs[1].id);
+        });
+        container.addEventListener('mouseleave', () => {
+            const imgs = container.querySelectorAll('img');
+            trocarImagem(imgs[0].id, imgs[1].id);
+        });
+    });
+</script>
 </body>
 </html>

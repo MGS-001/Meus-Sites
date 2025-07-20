@@ -76,21 +76,19 @@ header{
 
 main{
     margin: auto;
-    width: 97vw;
+    width: 98vw;
     background-color: rgba(255, 255, 255, 0.508);
 }
 
 h2, h3{
     padding: 10px;
+    text-indent: 1.5em;
     text-shadow: 6px 5px 3px rgb(0 0 0 / 7%);
 }
 
 p{
+    padding: 20px;
     text-indent: 2em;
-}
-
-p, li{
-    padding: 10px;
     font-size: 1.1em;
     line-height: 2em;
     margin: 24px auto ;
@@ -100,8 +98,11 @@ p, li{
 }
 
 ul{
-    padding: 10px;
-    list-style: none;
+    padding: 40px;
+    line-height: 2em;
+    font-style: italic;
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .tipodeplantas{
@@ -111,14 +112,18 @@ ul{
     height: 350px;
 }
 
+#aviso{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.841);
+}
+
 footer{
-    margin-bottom: -20px;
-    background-color: var(--cor4);
+    color: var(--cor1);
+    background-color: var(--cor5);
+    font-family: var(--fonttitulo);
 }
 
 footer p{
-    color: var(--cor1);
-    padding: 10px;
     text-align: center;
-    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.321);
 }

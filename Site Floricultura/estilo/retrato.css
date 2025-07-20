@@ -1,17 +1,16 @@
 body{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 20vw 3fr;
-    grid-template-rows: 80px 2fr 30px;
+    background-color: #BF9E75;
 }
 
 header{
     display: flex;
-    padding: 20px;
     align-items: center;
     justify-content: space-between;
     grid-area: 1 / 1 / 2 / 3;
+}
+
+#menuham{
+    display: none;
 }
 
 #logotitulo{
@@ -48,12 +47,19 @@ nav a:hover{
     border-bottom: 2px solid #BF9E75;
 }
 
-#menuham{
-    display: none;
+main{
+    gap: 20px;
+    display: grid;
+    margin-top: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-aside{
-    grid-area: 2 / 1 / 3 / 2;
+.image-container{
+    width: 75%;
+    max-width: 380px;
+    
 }
 
 footer{

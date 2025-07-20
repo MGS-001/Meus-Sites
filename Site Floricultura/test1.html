@@ -1,56 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
-        #image-container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            overflow: hidden;
+        *{
+            margin: 0;
+            padding: 0;
         }
 
-        .image {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transition: opacity 1s ease-in-out;
-            opacity: 0;
+        div{
+            text-align: center;
+            height: 100px;
+            background-color: green;
         }
-
-        .image.active {
-            opacity: 1;
+    
+        #item{
+            display: none;
         }
     </style>
 </head>
 <body>
-    <div id="image-container" onmouseenter="trocarImagem()">
-      <img id="image1" src="imagem/comigo ninguem pode 450.webp" class="image active">
-      <img id="image2" src="imagem/comigo-ninguem-pode desenho.png" class="image">
+    <div>
+         <span id="menuham" class="material-symbols-outlined" onclick="clicar()">menu</span>
+         <menu id="item">
+            <a href="">1</a>
+            <a href="">2</a>
+         </menu>
     </div>
-<script>
-    let containerimg = document.getElementById('image-container')
-    containerimg.addEventListener("mouseout", sair)
-    function trocarImagem() {
-        const img1 = document.getElementById('image1');
-        const img2 = document.getElementById('image2');
+    <script>
 
-        // Troca as classes de opacidade
-        img1.classList.toggle('active');
-        img2.classList.toggle('active');
-    }
-
-    function sair(){
-        const img1 = document.getElementById('image1');
-        const img2 = document.getElementById('image2');
-
-        // Troca as classes de opacidade
-        img1.classList.toggle('active');
-        img2.classList.toggle('active');  
-    }
-
-</script>
+        function clicar(){
+               let itens = document.getElementById('item')
+        if(itens.style.display == 'block'){
+          itens.style.display = 'none'
+        }else{
+            itens.style.display = 'block'
+        }
+        }
+     
+    </script>
 </body>
 </html>
