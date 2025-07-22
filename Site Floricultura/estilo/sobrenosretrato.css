@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #BF9E75;
+}
+
 header{
     display: flex;
     padding: 20px;
@@ -20,10 +24,6 @@ header{
     border-bottom: 2px solid #BF9E75;
 }
 
-body{
-    background-color: #BF9E75;
-}
-
 #item{
     display: block;
 }
@@ -33,7 +33,17 @@ body{
 }
 
 main{
-    width: 700px;
     margin: auto;
-    background-color:white;
+    width: 700px;
+    background-color: white;
+}
+
+h2, h3{
+    padding: 10px;
+    color: #1E2601;
+    text-align: center;
+}
+
+footer p{
+    margin: 0px;
 }

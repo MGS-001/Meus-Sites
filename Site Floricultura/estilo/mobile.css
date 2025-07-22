@@ -45,6 +45,12 @@ main{
     justify-content: center;
 }
 
+h2, h3{
+    padding: 10px;
+    color: #1E2601;
+    text-align: center;
+}
+
 .image-container{
     margin-top: 30px;
 }
